@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>가인패드</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=10">
+	<meta name="viewport" content="width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="가인패드">
+	<script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script src="../js/slick.min.js"></script>
+	<script src="../js/common.js"></script>
+	<link type="text/css" href="../css/common.css" rel="stylesheet">
+	<link type="text/css" href="../css/default.css" rel="stylesheet">
+	<link type="text/css" href="../css/slick.css" rel="stylesheet">
+	<link type="text/css" href="../css/slick-theme.css" rel="stylesheet">
+	<link rel="icon" href="../images/common/favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+<script>
+var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    icon: iconBase + '../images/contents/map_point.png'
+  });
+
+</script>
+</head>
+<body>
+	<div class="wrapper">
+		<!--header start-->
+		<div class="header">
+			<div class="header_inner">
+				<h1><a href="#"><img src="../images/common/logo.png" alt="가인패드" /></a></h1>
+				<div class="gnb_top">
+					<ul class="gnb_login">
+						<li><a href="#none">로그인</a></li>
+						<li><a href="#none">회원가입</a></li>
+						<li><a href="#none">마이페이지</a></li>
+					</ul>
+					<a href="#none" class="btn_lang">ENGLISH</a>
+				</div>
+				<ul class="gnb">
+					<li class="active"><a href="#none">가인패드</a></li>
+					<li><a href="#none"><span class="normal">가인</span>스토리</a></li>
+					<li><a href="#none"><span class="normal">가인</span>이벤트</a></li>
+					<li><a href="#none"><span class="normal">가인</span>지킴이</a></li>
+					<li><a href="#none"><span class="normal">가인</span>고객센터</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--header end-->
+		<!--container start-->
+		<div class="container gynpad">
+			<div class="quick_menu">
+				<p class="quick_top">quick menu</p>
+				<ul>
+					<li class="quick_01"><a href="#none">병원찾기</a></li>
+					<li class="quick_02"><a href="#none">가인패드<br />사용법</a></li>
+					<li class="quick_03"><a href="#none">특허 및<br />인증</a></li>
+				</ul>
+			</div>
+			<div class="title_visual">
+				<div class="title_visual_inner">
+					<h2><span class="img">가인패드</span></h2>
+					<p class="sub_text">가인패드 홈페이지 방문을 환영합니다</p>
+				</div>
+			</div>
+			<div class="lnb">
+				<ul class="lnb_in">
+					<li><a href="#none">가인패드소개</a></li>
+					<li><a href="#none">자궁경부암이란</a></li>
+					<li><a href="#none">HPV DNA TEST</a></li>
+					<li class="active"><a href="#none">병원찾기</a></li>
+					<li><a href="#none">보도자료</a></li>
+					<li><a href="#none">특허 및 인증</a></li>
+				</ul>
+			</div>
+			<div class="contents map">
+				<div class="map_area" id="googleMap">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.4197521244946!2d127.05588460092396!3d37.49801699286203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca41973e0c567%3A0xc5bd173e597109a0!2z67Kg7Iqk7Yuw7JWI67OR7JuQ!5e0!3m2!1sko!2skr!4v1499248928713" width="100%" height="740" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="map_list_area contents_in ">
+					<div class="map_list_top">
+						<div class="contents_title_area">
+							<h3>병원<span class="bold">찾기</span></h3>
+							<span>가까운 병원에서 가인패드룰 만나보세요</span>
+						</div>
+						<div class="map_search">
+							<div>
+								<label>지역검색</label>
+								<select style="width:171px;">
+									<option value="">시/도</option>
+									<option value="">서울특별시</option>
+									<option value="">경기도</option>
+								</select>
+								<select style="width:173px;">
+									<option value="">시/군/구</option>
+									<option value="">강남구</option>
+									<option value="">강동구</option>
+								</select>
+								<a href="#none" class="btn btn_xsmall btn_gray">검색</a>
+							</div>
+							<div class="">
+								<label>직접검색</label>
+								<p class="search_area">
+									<span class="search_input">
+										<input type="text" class=""/ >
+										<a href="#" class="search_btn">검색</a>
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="map_list">
+						<table>
+							<caption>병원찾기</caption>
+							<colgroup>
+								<col width="176px">
+								<col width="auto">
+								<col width="170px">
+								<col width="110px">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>베스티안 병원</th>
+									<td>서울특별시 강남구 도곡로 429 2층</td>
+									<td>02)202-2202</td>
+									<td><a href="#none" class="btn btn_small btn_gray">위치보기</a></td>
+								</tr>
+								<tr>
+									<th>베스티안 병원</th>
+									<td>서울특별시 강남구 도곡로 429 2층</td>
+									<td>02)202-2202</td>
+									<td><a href="#none" class="btn btn_small btn_gray">위치보기</a></td>
+								</tr>
+								<tr>
+									<th>베스티안 병원</th>
+									<td>서울특별시 강남구 도곡로 429 2층</td>
+									<td>02)202-2202</td>
+									<td><a href="#none" class="btn btn_small btn_gray">위치보기</a></td>
+								</tr>
+								<tr>
+									<th>베스티안 병원</th>
+									<td>서울특별시 강남구 도곡로 429 2층</td>
+									<td>02)202-2202</td>
+									<td><a href="#none" class="btn btn_small btn_gray">위치보기</a></td>
+								</tr>
+								<tr>
+									<th>베스티안 병원</th>
+									<td>서울특별시 강남구 도곡로 429 2층</td>
+									<td>02)202-2202</td>
+									<td><a href="#none" class="btn btn_small btn_gray">위치보기</a></td>
+								</tr>
+								<tr>
+									<th>베스티안 병원</th>
+									<td>서울특별시 강남구 도곡로 429 2층</td>
+									<td>02)202-2202</td>
+									<td><a href="#none" class="btn btn_small btn_gray">위치보기</a></td>
+								</tr>
+								<tr>
+									<th>베스티안 병원</th>
+									<td>서울특별시 강남구 도곡로 429 2층</td>
+									<td>02)202-2202</td>
+									<td><a href="#none" class="btn btn_small btn_gray">위치보기</a></td>
+								</tr>
+								<tr>
+									<th>베스티안 병원</th>
+									<td>서울특별시 강남구 도곡로 429 2층</td>
+									<td>02)202-2202</td>
+									<td><a href="#none" class="btn btn_small btn_gray">위치보기</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--container end-->
+		<!--footer start-->
+		<div class="footer">
+			<div class="footer_inner">
+				<h2>TCM Biosciences Inc.</h2>
+				<p>TCMlab 검사센터 의료기관 제41353536호</p>
+				<ul class="footer_list">
+					<li><a href="#none">회사소개</a></li>
+					<li><a href="#none">이용약관</a></li>
+					<li><a href="#none">개인정보취급방침</a></li>
+					<li><a href="#none">사이트맵</a></li>
+				</ul>
+				<address>
+					13487  경기도 성남시 분당구 판교로228번길 15 (삼평동, 세븐벤처밸리1) 3동 3층 l 전화 : 031-698-3041 l 팩스 : 031-698-3047
+				</address>
+				<span>COPYRIGHTⓒ 2017 TCM Biosciences Inc. ALL RIGHTS RESERVED</span>
+			</div>
+		</div>
+		<!--footer end-->
+	</div>
+</body>
+</html>
